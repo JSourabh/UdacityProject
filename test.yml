@@ -1,0 +1,10 @@
+Description: >
+    Deploy application via cloudformation script
+    This template deploys a VPC
+Resources:
+    SourabhVPC:
+        Type: AWS::EC2::VPC
+        Properties:
+            CidrBlock: 10.0.0.0/16
+            EnableDnsHostnames: true
+            
